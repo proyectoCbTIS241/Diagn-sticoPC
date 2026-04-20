@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnóstico de PCs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🛠️ Soporte y Mantenimiento de Equipos</h1>
+
+  <div class="formulario">
+    <input type="text" id="equipo" placeholder="Número de equipo">
+    <input type="text" id="tecnico" placeholder="Nombre del técnico">
+
+    <select id="tipo">
+      <option value="">Tipo de problema</option>
+      <option value="hardware">Hardware</option>
+      <option value="software">Software</option>
+    </select>
+
+    <input type="text" id="problema" placeholder="Describe el problema">
+
+    <button onclick="diagnosticar()">Registrar diagnóstico</button>
+  </div>
+
+  <h2>Historial de Mantenimiento</h2>
+  <div id="lista"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
