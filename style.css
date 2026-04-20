@@ -16,19 +16,22 @@ h1 {
   background: white;
   padding: 20px;
   margin: 20px auto;
-  width: 90%;
-  max-width: 500px;
+  width: 95%;
+  max-width: none; /* 🔥 clave */
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 input, select {
-  width: 90%;
+  width: 100%; /* 🔥 ocupa todo */
   padding: 12px;
-  margin: 8px;
+  margin: 8px 0;
   border-radius: 10px;
   border: 1px solid #ccc;
-  outline: none;
+}
+
+button {
+  width: 100%; /* 🔥 botón completo */
 }
 
 button {
@@ -56,8 +59,9 @@ button:hover {
   text-align: left;
 }
 
-.card p {
-  margin: 5px 0;
+.card {
+  width: 95%;
+  max-width: none;
 }
 body {
   transition: all 0.3s ease;
@@ -70,4 +74,8 @@ h1 {
 
 button {
   font-weight: bold;
+}
+
+body {
+  padding: 10px;
 }
