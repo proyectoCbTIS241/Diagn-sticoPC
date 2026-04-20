@@ -1,31 +1,44 @@
 body {
-  font-family: Arial;
-  background: #eef2f7;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
   text-align: center;
 }
 
 h1 {
-  background: #2c3e50;
+  background: linear-gradient(90deg, #007bff, #0056b3);
   color: white;
-  padding: 10px;
+  padding: 15px;
+  margin: 0;
 }
 
 .formulario {
-  margin: 20px;
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 input, select {
-  padding: 10px;
-  margin: 5px;
-  width: 220px;
+  width: 90%;
+  padding: 12px;
+  margin: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
 }
 
 button {
-  padding: 10px;
+  padding: 12px 20px;
   background: #007bff;
   color: white;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -34,9 +47,15 @@ button:hover {
 
 .card {
   background: white;
-  margin: 10px auto;
+  margin: 15px auto;
   padding: 15px;
-  width: 340px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px gray;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.card p {
+  margin: 5px 0;
 }
